@@ -1,0 +1,45 @@
+# Zig
+.toolchain/
+.zig-cache/
+zig-out/
+dist/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Build artifacts
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.obj
+*.o
+*.lib
+*.exp
+*.so
+*.dmp
+
+# Keep shipped BOF objects and donut loader blobs
+!nomadx/bof_files/*.o
+!nomadx/custom-donut/*.bin
+
+# Local Mythic/donut artifacts
+nomadx/custom-donut/donut
+nomadx/custom-donut/*.o
+nomadx/custom-donut/lib/*.so
+nomadx/custom-donut/lib/*.dll
+nomadx/custom-donut/lib/*.exp
+nomadx/custom-donut/lib/*.lib
+nomadx/custom-donut/lib/libdonut.a
+nomadx/custom-donut/lib/libdonut.so
+
+# Local reports, logs, secrets, and live configs
+.env
+*.log
+*.dmp
+Report_*.html
+src/agent_config.local.*

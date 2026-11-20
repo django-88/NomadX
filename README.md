@@ -102,8 +102,7 @@ export MYTHIC_DIR=/path/to/Mythic
 
 The script syncs this payload type into
 `$MYTHIC_DIR/InstalledServices/nomadx`, registers the `nomadx` service, rebuilds
-its container, and starts the required Mythic services. It does **not** modify
-the original C++ `nomad` payload type.
+its container, and starts the required Mythic services.
 
 After deployment, open the Mythic UI, create a payload, select **nomadx** and
 the **http** profile, then choose the build options below.

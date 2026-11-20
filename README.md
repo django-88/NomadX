@@ -278,14 +278,14 @@ network configuration. See [`SMOKE_TEST.md`](SMOKE_TEST.md) for details.
 
 ## Credits
 
-- [Kharon](https://github.com/entropy-z/Kharon) — thanks for the BOF objects and
+- [Kharon](https://github.com/entropy-z/Kharon) - thanks for the BOF objects and
   post-exploitation patterns used by several commands. The BOF objects remain
   subject to Kharon's upstream license.
-- [Apollo](https://github.com/MythicAgents/Apollo) — a .NET Framework Windows
+- [Apollo](https://github.com/MythicAgents/Apollo) - a .NET Framework Windows
   agent for Mythic; design reference for command and operator UX patterns
   (BSD 3-Clause). No Apollo source code is included in this repository.
-- [Donut](https://github.com/TheWover/donut) — BSD 3-Clause
-- [Mythic](https://github.com/its-a-feature/Mythic) — Mythic framework and
+- [Donut](https://github.com/TheWover/donut) - BSD 3-Clause
+- [Mythic](https://github.com/its-a-feature/Mythic) - Mythic framework and
   payload container APIs
 
 See [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for attribution, license

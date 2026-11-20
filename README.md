@@ -21,9 +21,6 @@
 > Use it only on systems you own or have explicit written authorization to test.
 > You are responsible for complying with all applicable laws and rules of engagement.
 
-NomadX is a ground-up Zig rewrite of the Nomad C++ agent, packaged as a separate
-Mythic payload type named `nomadx`. It is designed to install alongside the
-original `nomad` payload type without modifying it.
 
 ## Highlights
 

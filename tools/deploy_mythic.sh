@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Deploy the NomadX Zig payload type into the local Mythic install.
 #
-# The original C++ payload type at InstalledServices/nomad is left alone.
+# .
 set -euo pipefail
 
 SRC="$(cd "$(dirname "$0")/.." && pwd)/"
@@ -37,9 +37,7 @@ sudo "$MYTHIC_DIR/mythic-cli" add nomadx
 echo "[*] building the nomadx payload type image"
 sudo docker compose -f "$COMPOSE" build nomadx
 
-# Start only the services needed for a NomadX callback. Starting the whole
-# compose file can try to build unrelated installed agents (for example the
-# broken Kassandra compose entry on this host).
+
 CORE_SERVICES=(
     mythic_postgres
     mythic_rabbitmq

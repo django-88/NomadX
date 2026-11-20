@@ -278,29 +278,8 @@ python3 tools/mythic_proxy_test.py --callback-display-id <id>
 The token and proxy suites require a lab VM with the appropriate privileges and
 network configuration. See [`SMOKE_TEST.md`](SMOKE_TEST.md) for details.
 
-## Limitations / roadmap
-
-Not yet ported from the C++ Nomad feature set:
-
-- `output_type=stager` and the `stager_*` options
-- Patchless AMSI/ETW hardware-breakpoint bypasses
-- Call-stack spoofing
-- `enable_pe_loader` build toggle (`execute_pe` is always compiled)
-- `enable_socks_debug`
-- Single-instance mutex
-- AES key obfuscation beyond the encrypted config blob
-
-Other notes:
-
-- Direct syscall support depends on the target Windows build; the self-test
-  falls back when stubs cannot be validated.
-- The import table uses UCRT API sets; the original C++ build uses msvcrt.
-- `stager` output is explicitly rejected by the builder until it is ported.
 
 ## Credits
-
-NomadX is a Zig rewrite of the original **Nomad** C++ agent. It also draws on
-the following projects and communities:
 
 - [Kharon](https://github.com/entropy-z/Kharon) — thanks for the BOF objects and
   post-exploitation patterns used by several commands. The BOF objects remain
@@ -308,8 +287,6 @@ the following projects and communities:
 - [Apollo](https://github.com/MythicAgents/Apollo) — a .NET Framework Windows
   agent for Mythic; design reference for command and operator UX patterns
   (BSD 3-Clause). No Apollo source code is included in this repository.
-- [KaplaStrike](https://github.com/0xMirasio/KaplaStrike) — BSD 2-Clause
-- Starburst / CrystalKit — MIT / BSD 2-Clause
 - [Donut](https://github.com/TheWover/donut) — BSD 3-Clause
 - [Mythic](https://github.com/its-a-feature/Mythic) — Mythic framework and
   payload container APIs

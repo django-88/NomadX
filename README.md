@@ -278,6 +278,10 @@ network configuration. See [`SMOKE_TEST.md`](SMOKE_TEST.md) for details.
 
 ## Credits
 
+- [mgeeky](https://github.com/mgeeky)
+  
+- [Mr.Un1k0d3r](https://github.com/mr-un1k0d3r)
+
 - [Kharon](https://github.com/entropy-z/Kharon) - thanks for the BOF objects and
   post-exploitation patterns used by several commands. The BOF objects remain
   subject to Kharon's upstream license.

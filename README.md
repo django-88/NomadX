@@ -27,7 +27,7 @@ original `nomad` payload type without modifying it.
 
 ## Highlights
 
-- **Native Zig agent** for Windows x86_64 — EXE, DLL, and donut shellcode.
+- **Native Zig agent** for Windows x86_64 - EXE, DLL, and donut shellcode.
 - **Mythic HTTP C2** using the existing AES-256-CBC + HMAC-SHA256 wire format,
   including zero-key plaintext mode for lab testing.
 - **Broad command surface**: files, registry, services, tokens, process
@@ -51,15 +51,15 @@ original `nomad` payload type without modifying it.
 
 ```mermaid
 flowchart LR
-    M[Mythic server] -->|HTTP(S)| C[HTTP C2 profile]
-    C --> A[nomadx.exe / nomadx.dll]
-    A --> T[Task dispatcher]
-    T --> R[Recon & files]
-    T --> X[Execution & tokens]
-    T --> B[BOF / COFF loader]
-    T --> I[Injection engine]
-    T --> P[SOCKS5 / rportfwd]
-    I --> S[Sleep mask + syscalls]
+    M["Mythic server"] -->|HTTPS or HTTP| C["HTTP C2 profile"]
+    C --> A["nomadx.exe / nomadx.dll"]
+    A --> T["Task dispatcher"]
+    T --> R["Recon and files"]
+    T --> X["Execution and tokens"]
+    T --> B["BOF/COFF loader"]
+    T --> I["Injection engine"]
+    T --> P["SOCKS5 and rportfwd"]
+    I --> S["Sleep mask and syscalls"]
 ```
 
 The EXE and DLL use the same beacon loop and command dispatcher. DLL builds

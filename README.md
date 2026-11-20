@@ -129,8 +129,6 @@ Run the resulting EXE on Windows and watch the mock server. See
 
 ## Build options
 
-The Mythic builder exposes the same pacing, allocation, guardrail, syscall, and
-metadata controls as the C++ payload.
 
 | Option | Values / default | Purpose |
 | --- | --- | --- |
